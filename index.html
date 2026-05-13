@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gas Fireplace Repair Co. | Twin Cities Expert Service Since 2011</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --red: #c0380a; --red-light: #e04d1a; --ink: #1c1a18;
+  --body: #3d3a36; --muted: #8a847c; --rule: #e8e2da;
+  --bg: #fdfaf6; --bg2: #f5f0e8; --white: #ffffff;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Outfit', sans-serif; background: var(--bg); color: var(--body); line-height: 1.6; font-weight: 300; }
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  background: var(--white); border-bottom: 1px solid var(--rule);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 6%; height: 68px;
+}
+.nav-brand { display: flex; align-items: center; gap: 11px; text-decoration: none; }
+.nav-logo { height: 34px; width: auto; }
+.nav-brand-text { display: flex; flex-direction: column; line-height: 1; }
+.nav-name { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 600; color: var(--ink); letter-spacing: 0.01em; white-space: nowrap; }
+.nav-sub { font-size: 0.62rem; font-weight: 400; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 3px; }
+.nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
+.nav-links a { font-size: 0.84rem; font-weight: 400; color: var(--body); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--red); }
+.nav-btn { background: var(--red) !important; color: var(--white) !important; padding: 9px 22px !important; border-radius: 100px !important; font-size: 0.82rem !important; font-weight: 500 !important; transition: background 0.2s !important; }
+.nav-btn:hover { background: var(--red-light) !important; }
+@media (max-width: 640px) { .nav-sub { display: none; } .nav-links li:not(:last-child) { display: none; } }
+.hero { padding-top: 68px; min-height: 92vh; display: flex; align-items: center; background: var(--bg); position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; right: -80px; top: 60px; width: 560px; height: 560px; background: radial-gradient(circle, rgba(192,56,10,0.07) 0%, transparent 70%); pointer-events: none; }
+.hero-inner { max-width: 1160px; margin: 0 auto; padding: 80px 6%; display: grid; grid-template-columns: 1fr 420px; gap: 60px; align-items: center; width: 100%; }
+.hero-pill { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--rule); border-radius: 100px; padding: 6px 16px 6px 10px; font-size: 0.78rem; color: var(--muted); margin-bottom: 28px; background: var(--white); }
+.hero-pill-dot { width: 7px; height: 7px; background: #2ecc71; border-radius: 50%; animation: blink 2s ease-in-out infinite; }
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+.hero-logo-lockup { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
+.hero-logo-lockup img { height: 60px; width: auto; }
+.hero-lockup-name { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--ink); line-height: 1.15; }
+.hero-lockup-est { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 5.5vw, 4.2rem); font-weight: 600; color: var(--ink); line-height: 1.08; letter-spacing: -0.01em; margin-bottom: 24px; }
+h1 em { font-style: italic; color: var(--red); }
+.hero-desc { font-size: 1rem; color: var(--muted); line-height: 1.75; max-width: 460px; margin-bottom: 40px; font-weight: 300; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+.btn-red { background: var(--red); color: var(--white); text-decoration: none; padding: 14px 30px; border-radius: 100px; font-size: 0.9rem; font-weight: 500; transition: background 0.2s, transform 0.15s; display: inline-block; }
+.btn-red:hover { background: var(--red-light); transform: translateY(-1px); }
+.btn-outline { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; padding: 14px 24px; border-radius: 100px; font-size: 0.9rem; font-weight: 400; border: 1px solid var(--rule); transition: border-color 0.2s; background: var(--white); }
+.btn-outline:hover { border-color: var(--ink); }
+.hero-trust { margin-top: 36px; display: flex; gap: 24px; flex-wrap: wrap; }
+.hero-trust-item { display: flex; align-items: center; gap: 7px; font-size: 0.8rem; color: var(--muted); }
+.hero-trust-item::before { content: '✓'; color: var(--red); font-weight: 600; }
+.hero-card { background: var(--white); border: 1px solid var(--rule); border-radius: 16px; overflow: hidden; box-shadow: 0 4px 40px rgba(0,0,0,0.06); }
+.hero-card-top { background: var(--ink); padding: 26px 28px 22px; }
+.hero-card-top-label { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 8px; }
+.hero-card-top-title { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--white); line-height: 1.25; }
+.hero-card-body { padding: 22px 28px; }
+.card-feature { display: flex; align-items: flex-start; gap: 14px; padding: 13px 0; border-bottom: 1px solid var(--rule); }
+.card-feature:last-child { border-bottom: none; }
+.card-feature-icon { width: 34px; height: 34px; flex-shrink: 0; background: #fdf0eb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; }
+.card-feature-text strong { display: block; font-size: 0.85rem; font-weight: 500; color: var(--ink); margin-bottom: 2px; }
+.card-feature-text span { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+.hero-card-footer { padding: 18px 28px; background: var(--bg2); border-top: 1px solid var(--rule); text-align: center; }
+.hero-card-footer a.book-btn { display: block; background: var(--red); color: var(--white); text-decoration: none; padding: 13px; border-radius: 100px; font-size: 0.88rem; font-weight: 500; transition: background 0.2s; }
+.hero-card-footer a.book-btn:hover { background: var(--red-light); }
+.hero-card-footer-sub { margin-top: 10px; font-size: 0.74rem; color: var(--muted); }
+.hero-card-footer-sub a { color: var(--red); text-decoration: none; }
+.stats { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: var(--white); }
+.stats-inner { max-width: 1160px; margin: 0 auto; padding: 0 6%; display: grid; grid-template-columns: repeat(4, 1fr); }
+.stat { padding: 28px 24px; text-align: center; border-right: 1px solid var(--rule); }
+.stat:last-child { border-right: none; }
+.stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 600; color: var(--ink); line-height: 1; }
+.stat-label { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.09em; margin-top: 5px; }
+.section { padding: 96px 6%; }
+.section-inner { max-width: 1160px; margin: 0 auto; }
+.eyebrow { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: 12px; }
+h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.9rem, 3.5vw, 2.8rem); font-weight: 600; color: var(--ink); line-height: 1.15; margin-bottom: 14px; }
+.section-desc { font-size: 0.97rem; color: var(--muted); max-width: 480px; line-height: 1.75; margin-bottom: 52px; font-weight: 300; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 14px; overflow: hidden; }
+.svc { background: var(--white); padding: 30px 26px; transition: background 0.2s; }
+.svc:hover { background: var(--bg2); }
+.svc-icon { font-size: 1.5rem; margin-bottom: 14px; display: block; }
+.svc h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+.svc p { font-size: 0.83rem; color: var(--muted); line-height: 1.65; }
+.reviews-section { background: var(--bg2); padding: 96px 6%; }
+.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.review-card { background: var(--white); border: 1px solid var(--rule); border-radius: 14px; padding: 26px; display: flex; flex-direction: column; gap: 14px; }
+.review-stars { color: #f5a623; font-size: 0.85rem; letter-spacing: 2px; }
+.review-text { font-size: 0.9rem; color: var(--body); line-height: 1.7; font-style: italic; flex: 1; }
+.review-author { display: flex; align-items: center; gap: 12px; padding-top: 14px; border-top: 1px solid var(--rule); }
+.review-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--bg2); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--red); flex-shrink: 0; }
+.review-name { font-size: 0.84rem; font-weight: 500; color: var(--ink); }
+.review-meta { font-size: 0.73rem; color: var(--muted); margin-top: 1px; }
+.reviews-source { margin-top: 28px; text-align: center; font-size: 0.79rem; color: var(--muted); }
+.why-section { padding: 96px 6%; background: var(--white); }
+.why-inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.why-list { display: flex; flex-direction: column; }
+.why-item { display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--rule); }
+.why-item:first-child { border-top: 1px solid var(--rule); }
+.why-num { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; color: var(--red); opacity: 0.5; line-height: 1; flex-shrink: 0; width: 26px; padding-top: 2px; }
+.why-text strong { display: block; font-size: 0.9rem; font-weight: 500; color: var(--ink); margin-bottom: 4px; }
+.why-text span { font-size: 0.83rem; color: var(--muted); line-height: 1.65; }
+.area-section { padding: 80px 6%; background: var(--bg); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.area-inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 1fr 2fr; gap: 60px; align-items: start; }
+.area-tags { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 6px; }
+.area-tag { background: var(--white); border: 1px solid var(--rule); padding: 6px 15px; border-radius: 100px; font-size: 0.81rem; color: var(--body); }
+.form-section { padding: 96px 6%; background: var(--ink); }
+.form-inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.form-left .eyebrow { color: rgba(255,255,255,0.35); }
+.form-left h2 { color: var(--white); margin-bottom: 16px; }
+.form-left h2 em { font-style: italic; color: #e8612a; }
+.form-left p { color: rgba(255,255,255,0.5); font-size: 0.95rem; line-height: 1.75; font-weight: 300; }
+.form-contact-items { margin-top: 36px; display: flex; flex-direction: column; gap: 16px; }
+.form-contact-item { display: flex; align-items: center; gap: 14px; }
+.form-contact-icon { width: 40px; height: 40px; background: rgba(255,255,255,0.06); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+.form-contact-text { font-size: 0.88rem; color: rgba(255,255,255,0.5); }
+.form-contact-text a { color: #e8612a; text-decoration: none; font-weight: 500; }
+.contact-form { background: var(--white); border-radius: 16px; padding: 40px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.form-group label { font-size: 0.78rem; font-weight: 500; color: var(--ink); letter-spacing: 0.05em; text-transform: uppercase; }
+.form-group input, .form-group select, .form-group textarea { background: var(--bg); border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; font-size: 0.9rem; font-family: 'Outfit', sans-serif; color: var(--ink); transition: border-color 0.2s; outline: none; width: 100%; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--red); }
+.form-group textarea { resize: vertical; min-height: 110px; }
+.form-submit { width: 100%; background: var(--red); color: var(--white); border: none; padding: 15px; border-radius: 100px; font-size: 0.95rem; font-weight: 500; font-family: 'Outfit', sans-serif; cursor: pointer; transition: background 0.2s, transform 0.15s; margin-top: 8px; }
+.form-submit:hover { background: var(--red-light); transform: translateY(-1px); }
+.form-note { text-align: center; margin-top: 14px; font-size: 0.75rem; color: var(--muted); }
+.form-success { display: none; text-align: center; padding: 40px 20px; }
+.form-success-icon { font-size: 2.5rem; margin-bottom: 16px; }
+.form-success h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--ink); margin-bottom: 8px; }
+.form-success p { color: var(--muted); font-size: 0.9rem; }
+footer { background: #111; padding: 48px 6% 28px; }
+.footer-inner { max-width: 1160px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.footer-brand { display: flex; align-items: center; gap: 10px; }
+.footer-logo { height: 28px; filter: brightness(0) invert(0.5); }
+.footer-name { font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; color: rgba(255,255,255,0.5); }
+.footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+.footer-links a { color: rgba(255,255,255,0.3); text-decoration: none; font-size: 0.81rem; transition: color 0.2s; }
+.footer-links a:hover { color: rgba(255,255,255,0.7); }
+.footer-copy { max-width: 1160px; margin: 22px auto 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 0.74rem; color: rgba(255,255,255,0.18); }
+@media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; } .services-grid { grid-template-columns: 1fr 1fr; } .reviews-grid { grid-template-columns: 1fr 1fr; } .why-inner { grid-template-columns: 1fr; gap: 40px; } .area-inner { grid-template-columns: 1fr; gap: 32px; } .stats-inner { grid-template-columns: repeat(2, 1fr); } .form-inner { grid-template-columns: 1fr; gap: 40px; } .form-row { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } .reviews-grid { grid-template-columns: 1fr; } h1 { font-size: 2.6rem; } .section { padding: 64px 5%; } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.hero-logo-lockup { animation: fadeUp 0.5s ease both; }
+.hero-pill { animation: fadeUp 0.5s 0.06s ease both; }
+h1 { animation: fadeUp 0.55s 0.12s ease both; }
+.hero-desc { animation: fadeUp 0.55s 0.18s ease both; }
+.hero-actions { animation: fadeUp 0.55s 0.24s ease both; }
+.hero-trust { animation: fadeUp 0.55s 0.30s ease both; }
+.hero-card { animation: fadeUp 0.6s 0.16s ease both; }
+
+
+  .img-break-overlay { background: rgba(253,250,246,0.82); }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#" class="nav-brand">
+    <img src="https://images.squarespace-cdn.com/content/v1/64e85789c1ed1a6d297fd28b/50f57f21-fe63-4d44-9b05-60a913b4b55d/flame.png?format=200w" alt="Logo" class="nav-logo">
+    <div class="nav-brand-text">
+      <span class="nav-name">Gas Fireplace Repair Co.</span>
+      <span class="nav-sub">Twin Cities &middot; Since 2011</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#area">Service Area</a></li>
+    <li><a href="#contact" class="nav-btn">Schedule Service</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-logo-lockup">
+        <img src="https://images.squarespace-cdn.com/content/v1/64e85789c1ed1a6d297fd28b/50f57f21-fe63-4d44-9b05-60a913b4b55d/flame.png?format=300w" alt="Logo">
+        <div><div class="hero-lockup-name">Gas Fireplace Repair Co.</div><div class="hero-lockup-est">Established 2011 &middot; Twin Cities</div></div>
+      </div>
+      <div class="hero-pill"><span class="hero-pill-dot"></span>Available &middot; responds same day</div>
+      <h1>Your fireplace,<br>fixed <em>right.</em></h1>
+      <p class="hero-desc">Gas fireplace repair, cleaning, and tune-ups across Minneapolis, St. Paul, and the greater metro. One certified tech, honest pricing, most jobs done same visit.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-red">Schedule Service</a>
+        <a href="tel:6519839055" class="btn-outline">📞 (651) 983-9055</a>
+      </div>
+      <div class="hero-trust">
+        <span class="hero-trust-item">All major brands</span>
+        <span class="hero-trust-item">Single-visit repairs</span>
+        <span class="hero-trust-item">Upfront quotes</span>
+        <span class="hero-trust-item">Since 2011</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-top"><div class="hero-card-top-label">What to expect</div><div class="hero-card-top-title">Professional service,<br>no guesswork.</div></div>
+      <div class="hero-card-body">
+        <div class="card-feature"><div class="card-feature-icon">🔧</div><div class="card-feature-text"><strong>All Brands Serviced</strong><span>Lennox, Majestic, Heat &amp; Glo, Napoleon, Regency, and more.</span></div></div>
+        <div class="card-feature"><div class="card-feature-icon">✅</div><div class="card-feature-text"><strong>Same-Visit Repairs</strong><span>Most issues diagnosed and fixed on the spot — no second trips needed.</span></div></div>
+        <div class="card-feature"><div class="card-feature-icon">💬</div><div class="card-feature-text"><strong>Transparent Pricing</strong><span>Clear quote before any parts are ordered or work proceeds.</span></div></div>
+        <div class="card-feature"><div class="card-feature-icon">🏠</div><div class="card-feature-text"><strong>Residential &amp; Commercial</strong><span>Homes, rentals, and commercial properties across the metro.</span></div></div>
+      </div>
+      <div class="hero-card-footer">
+        <a href="#contact" class="book-btn">Book a Service Visit &rarr;</a>
+        <div class="hero-card-footer-sub">Or call <a href="tel:6519839055">(651) 983-9055</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat"><div class="stat-num">2011</div><div class="stat-label">Est. Twin Cities</div></div>
+    <div class="stat"><div class="stat-num">All</div><div class="stat-label">Major Brands</div></div>
+    <div class="stat"><div class="stat-num">1 Visit</div><div class="stat-label">Most Repairs</div></div>
+    <div class="stat"><div class="stat-num">Metro</div><div class="stat-label">Wide Coverage</div></div>
+  </div>
+</div>
+<section class="section" id="services">
+  <div class="section-inner">
+    <div class="eyebrow">What We Do</div>
+    <h2>Services We Offer</h2>
+    <p class="section-desc">Expert diagnostics and repair for every type of gas fireplace issue.</p>
+    <div class="services-grid">
+      <div class="svc"><span class="svc-icon">🔍</span><h3>Diagnostics &amp; Repair</h3><p>Full inspection of igniters, thermocouples, gas valves, pilot lights, and controls.</p></div>
+      <div class="svc"><span class="svc-icon">🛡️</span><h3>Annual Tune-Up</h3><p>Seasonal maintenance to ensure safe operation, clean burners, and maximize efficiency.</p></div>
+      <div class="svc"><span class="svc-icon">🔥</span><h3>Pilot Light Issues</h3><p>Fix pilots that won't stay lit, intermittent ignition problems, or repeated outages.</p></div>
+      <div class="svc"><span class="svc-icon">🪟</span><h3>Glass &amp; Gasket</h3><p>Replace cracked or cloudy fireplace glass panels and worn door gaskets.</p></div>
+      <div class="svc"><span class="svc-icon">🌡️</span><h3>Thermostat &amp; Remote</h3><p>Repair or replace wall thermostats, remote receivers, and control systems.</p></div>
+      <div class="svc"><span class="svc-icon">🔩</span><h3>Parts Replacement</h3><p>OEM and compatible parts for all major brands with upfront quotes.</p></div>
+    </div>
+  </div>
+</section>
+<section class="reviews-section" id="reviews">
+  <div class="section-inner">
+    <div class="eyebrow">Customer Reviews</div>
+    <h2>What Homeowners Say</h2>
+    <p class="section-desc">Trusted by Twin Cities homeowners since 2011.</p>
+    <div class="reviews-grid">
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Called on a Monday, had someone out by Wednesday. The tech was knowledgeable and had our fireplace working in under an hour."</p><div class="review-author"><div class="review-avatar">S</div><div><div class="review-name">Sarah M.</div><div class="review-meta">Minneapolis, MN &middot; Google</div></div></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Our fireplace hadn't worked in two winters. One visit and it was fixed same day. Pricing was fair with no surprise charges."</p><div class="review-author"><div class="review-avatar">D</div><div><div class="review-name">David R.</div><div class="review-meta">Edina, MN &middot; Google</div></div></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Super professional and on time. Diagnosed the issue quickly and gave me a quote before touching anything."</p><div class="review-author"><div class="review-avatar">K</div><div><div class="review-name">Karen T.</div><div class="review-meta">Woodbury, MN &middot; Google</div></div></div></div>
+    </div>
+  </div>
+</section>
+<section class="why-section" id="why-us">
+  <div class="why-inner">
+    <div>
+      <div class="eyebrow">Why Choose Us</div>
+      <h2>Local. Honest.<br>Done right.</h2>
+      <p style="font-size:0.95rem;color:var(--muted);line-height:1.75;font-weight:300;margin-top:8px;">We're not a national franchise. A dedicated local technician serving Twin Cities homeowners since 2011.</p>
+    </div>
+    <div class="why-list">
+      <div class="why-item"><div class="why-num">01</div><div class="why-text"><strong>Certified Technician</strong><span>Trained on all major gas fireplace brands in the Minneapolis–St. Paul metro.</span></div></div>
+      <div class="why-item"><div class="why-num">02</div><div class="why-text"><strong>No Hidden Fees</strong><span>You approve pricing before any parts are ordered or work proceeds.</span></div></div>
+      <div class="why-item"><div class="why-num">03</div><div class="why-text"><strong>Flexible Scheduling</strong><span>We work around your schedule, including evenings and weekends.</span></div></div>
+      <div class="why-item"><div class="why-num">04</div><div class="why-text"><strong>Safety Included</strong><span>Every visit includes a full safety check of gas connections and ventilation.</span></div></div>
+    </div>
+  </div>
+</section>
+<section class="area-section" id="area">
+  <div class="area-inner">
+    <div>
+      <div class="eyebrow">Service Area</div>
+      <h2>Twin Cities Metro</h2>
+      <p style="font-size:0.9rem;color:var(--muted);line-height:1.75;margin-top:8px;">Serving Minneapolis, St. Paul, and surrounding suburbs.</p>
+    </div>
+    <div class="area-tags">
+      <span class="area-tag">Minneapolis</span><span class="area-tag">St. Paul</span><span class="area-tag">Bloomington</span><span class="area-tag">Eden Prairie</span><span class="area-tag">Edina</span><span class="area-tag">Minnetonka</span><span class="area-tag">Plymouth</span><span class="area-tag">Maple Grove</span><span class="area-tag">Eagan</span><span class="area-tag">Burnsville</span><span class="area-tag">Woodbury</span><span class="area-tag">Roseville</span><span class="area-tag">Apple Valley</span><span class="area-tag">Lakeville</span><span class="area-tag">Stillwater</span><span class="area-tag">White Bear Lake</span><span class="area-tag">&amp; More</span>
+    </div>
+  </div>
+</section>
+<section class="form-section" id="contact">
+  <div class="form-inner">
+    <div class="form-left">
+      <div class="eyebrow">Get In Touch</div>
+      <h2>Ready to book?<br><em>We make it easy.</em></h2>
+      <p>Fill out the form and we'll get back to you same day.</p>
+      <div class="form-contact-items">
+        <div class="form-contact-item"><div class="form-contact-icon">📞</div><div class="form-contact-text"><a href="tel:6519839055">(651) 983-9055</a></div></div>
+        <div class="form-contact-item"><div class="form-contact-icon">✉️</div><div class="form-contact-text"><a href="mailto:tech@gasfireplacerepair.co">tech@gasfireplacerepair.co</a></div></div>
+        <div class="form-contact-item"><div class="form-contact-icon">📍</div><div class="form-contact-text">Minneapolis–St. Paul Metro Area</div></div>
+        <div class="form-contact-item"><div class="form-contact-icon">🕐</div><div class="form-contact-text">Mon–Sat · Replies same day</div></div>
+      </div>
+    </div>
+    <div class="contact-form" id="formWrapper">
+      <form id='contactForm' method='post' name='contact'>
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none;"><input name="bot-field"></p>
+        <div class="form-row">
+          <div class="form-group"><label>First Name</label><input type="text" name="first-name" placeholder="John" required></div>
+          <div class="form-group"><label>Last Name</label><input type="text" name="last-name" placeholder="Smith" required></div>
+        </div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="(651) 555-0100" required></div>
+        <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="john@email.com" required></div>
+        <div class="form-group"><label>Service Needed</label>
+          <select name="service" required>
+            <option value="" disabled selected>Select a service...</option>
+            <option>Diagnostics & Repair</option><option>Annual Tune-Up</option><option>Pilot Light Issue</option><option>Glass & Gasket Replacement</option><option>Thermostat & Remote</option><option>Parts Replacement</option><option>Not Sure / Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Tell Us More (optional)</label><textarea name="message" placeholder="Describe what's going on with your fireplace..."></textarea></div>
+        <button type="submit" class="form-submit">Send Request →</button>
+        <p class="form-note">We'll respond within a few hours during business hours.</p>
+      </form>
+      <div class="form-success" id="formSuccess"><div class="form-success-icon">🔥</div><h3>Request Sent!</h3><p>Thanks! We'll be in touch same day to confirm your appointment.</p></div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><img src="https://images.squarespace-cdn.com/content/v1/64e85789c1ed1a6d297fd28b/50f57f21-fe63-4d44-9b05-60a913b4b55d/flame.png?format=200w" alt="Logo" class="footer-logo"><span class="footer-name">Gas Fireplace Repair Co.</span></div>
+    <div class="footer-links"><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#area">Service Area</a><a href="#contact">Contact</a><a href="tel:6519839055">(651) 983-9055</a></div>
+  </div>
+  <div class="footer-copy"><span>&copy; 2026 SANZ LLC &middot; Gas Fireplace Repair Co.</span><span>Minneapolis, MN &middot; Est. 2011</span></div>
+</footer>
+<script>
+  const form = document.getElementById('contactForm');
+  const success = document.getElementById('formSuccess');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        await fetch('/', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: new URLSearchParams(data).toString() });
+        form.style.display = 'none';
+        success.style.display = 'block';
+      } catch (err) { alert('Something went wrong. Please call us at (651) 983-9055.'); }
+    });
+  }
+</script>
+</body>
+</html>
